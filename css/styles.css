@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+/*#productImage { not working ------------!!*/
+/*    width: 30px;*/
+/*}*/
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+}
+
+.header, .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu {
+    gap: 40px;
+    list-style-type: none;
+    margin-right: 40px;
+}
+
+.menu a {
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.logo img {
+    height: 80px;
+    margin-left: 40px;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+}
+
+.footer {
+    position: absolute;
+    margin-top: auto;
+    bottom: 0;
+    height: 80px;
+    width: 100%;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 40px;
+}
+
+
+
+
