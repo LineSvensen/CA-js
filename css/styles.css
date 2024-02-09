@@ -13,16 +13,33 @@
     display: flex;
     flex-direction: column;
     /*margin-top: 40px;*/
-    margin-bottom: 52px;
     justify-content: center;
     justify-items: center;
     align-items: center;
     align-content: center;
     text-align: center;
     gap: 16px;
+    background-color: white;
 }
 
+.card {
+    background-color: white;
+    width: 500px;
+    padding: 20px;
+    height: 100%;
+    border-radius: 8px;
+    margin: 20px 0 20px 0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
 
+h2, p {
+    padding: 16px;
+}
+
+button {
+    margin: 16px;
+    padding: 8px 16px 8px 16px;
+}
 
 
 /*titleForProduct.classList.add("prod-title");*/
@@ -59,6 +76,7 @@
 .logo img {
     height: 80px;
     margin-left: 40px;
+    margin-top: 8px;
 }
 
 body {
