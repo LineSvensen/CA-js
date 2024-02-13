@@ -8,7 +8,7 @@
     <meta name="keywords" content="jackets, shopping, outdoor">
     <link href="css/styles.css" rel="stylesheet">
     <title>Home :: Rainy Days</title>
-    <script src="js/script.js" defer></script>
+    <script src="js/script.js" defer type="module"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
@@ -30,9 +30,11 @@
             </ul>
         </nav>
     </header>
-    <button class="filterbtn" data-filter="showall">Show all</button>
-    <button class="filterbtn" data-filter="female">Female</button>
-    <button class="filterbtn" data-filter="male">Male</button>
+    <section class="btns">
+        <button class="filterbtn" data-filter="showall">Show all</button>
+        <button class="filterbtn" data-filter="female">Female</button>
+        <button class="filterbtn" data-filter="male">Male</button>
+    </section>
 
     <section id="product-container">
         <!--        products will automatically be added here-->

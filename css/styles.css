@@ -39,8 +39,34 @@ h2, p {
 button {
     margin: 16px;
     padding: 8px 16px 8px 16px;
+    border: none;
+    background-color: darkorange;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
 }
 
+button:hover {
+    background-color: #ffa130;
+}
+
+.btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.btns button {
+    background-color: black;
+    color: white;
+}
+
+.btns button:hover {
+    background-color: #3a3a3a;
+    color: white;
+}
 
 /*titleForProduct.classList.add("prod-title");*/
 /*productDescription.classList.add("prod-description");*/
@@ -95,12 +121,17 @@ body {
     padding-left: 40px;
 }
 
-.discount-price {
-    color: red;
+/*.discount-price {*/
+/*    color: red;*/
+/*}*/
+
+/*.prod-price-before {*/
+/*    text-decoration: line-through;*/
+/*}*/
+
+
+a {
+    color: black;
+    list-style-type: none;
+    text-decoration: none;
 }
-
-.prod-price-before {
-    text-decoration: line-through;
-}
-
-
