@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    width: 100px;
+    height: 100%;
+}
+
+#cart-container p {
+    font-weight: bolder;
+}
+
+h1 {
+    padding-left: 20px;
+}
+
+/*div {*/
+/*    border: 1px solid grey;*/
+/*    padding: 20px;*/
+/*}*/
+
+#cart-container div div {
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+}
+
+.header, .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu {
+    gap: 40px;
+    list-style-type: none;
+    margin-right: 40px;
+}
+
+.menu a {
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.logo a {
+    height: 80px;
+    margin-left: 40px;
+    margin-top: 8px;
+}
+
+.footer {
+    margin-top: 20px;
+    margin-bottom: 0;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 40px;
+}
+
+body {
+    margin: 0;
+}
+
+/* Styles for the loading animation */
+#loading-animation {
+    display: none; /* Initially hidden */
+    width: 100px;
+    height: 100px;
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999; /* Ensure it appears above other content */
+    border: 5px solid #3498db;
+    border-top: 5px solid #f1f1f1;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

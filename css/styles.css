@@ -107,11 +107,13 @@ button:hover {
 
 body {
     position: relative;
+    margin: 0;
 }
 
 .footer {
     margin-top: auto;
     bottom: 0;
+    margin-bottom: 0;
     height: 40px;
     width: 100%;
     background-color: grey;
