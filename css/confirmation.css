@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    width: 80px;
+    height: 100%;
+    margin-left: 40px;
+}
+
+#receipt {
+    gap: 16px;
+    font-weight: bold;
+}
+
+#receipt h1 {
+    margin-left: 40px;
+}
+
+#receipt p {
+    font-size: 16px;
+}
+
+#total-value-paid {
+    margin-left: 40px;
+}
+
+p {
+    margin-left: 40px;
+    font-size: 20px;
+}
+
+h1 {
+    padding-left: 40px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+}
+
+.header, .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu {
+    gap: 40px;
+    list-style-type: none;
+    margin-right: 40px;
+}
+
+.menu a {
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.logo a {
+    height: 80px;
+    margin-left: 40px;
+    margin-top: 8px;
+}
+
+.footer {
+    margin-top: 20px;
+    margin-bottom: 0;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 40px;
+}
+
+.footer p {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+}
