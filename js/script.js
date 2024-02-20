@@ -15,7 +15,7 @@ function getAllProducts() {
                                 <h2 class="prod-title">${product.title}</h2>
                                 <p class="prod-description">${product.description}</p>
                                 <p class="prod-price">Price: ${product.price}</p>
-                                <button>See more</button>
+                                <button>View Details</button>
                             </a>    
                             </div>
                         </section>
