@@ -7,7 +7,7 @@ function getCartFromLocalStorage() {
     }
 }
 
-function displayCartOnConfirmationPage() {
+function displayCartOnCheckoutPage() {
     const cart = getCartFromLocalStorage();
     const cartContainer = document.getElementById("cart-container");
     const totalValueElement = document.getElementById("total-value");
@@ -49,14 +49,14 @@ function removeFromCart(productIndex) {
     if (productIndex >= 0 && productIndex < cart.length) {
         cart.splice(productIndex, 1);
         localStorage.setItem("cart", JSON.stringify(cart));
-        displayCartOnConfirmationPage();
+        displayCartOnCheckoutPage();
     } else {
         console.error(`Invalid product index: ${productIndex}`);
     }
 }
 
 window.addEventListener("load", function() {
-    displayCartOnConfirmationPage();
+    displayCartOnCheckoutPage();
 });
 
 const checkoutBtn = document.getElementById("checkout-btn");
@@ -70,6 +70,7 @@ checkoutBtn.addEventListener("click", function() {
 
         setTimeout(function () {
             loadingAnimation.style.display = "none";
+
             window.location.href = "confirmation.html";
         }, 1000);
     } else {

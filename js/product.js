@@ -1,11 +1,11 @@
 const productDetailsContainer = document.getElementById("product-card-container-single");
 const cartContainer = document.getElementById("render-cart-data");
-
 const urlParams = new URLSearchParams(window.location.search);
 const productId = urlParams.get("id");
-const productTitle = urlParams.get("title");
-const productImg = urlParams.get("image");
-const productPr = urlParams.get("price");
+// const productTitle = urlParams.get("title");
+// const productImg = urlParams.get("image");
+// const productPr = urlParams.get("price");
+let cart = [];
 
 function getProductDetails() {
     fetch(`https://api.noroff.dev/api/v1/rainy-days/${productId}`)
@@ -37,8 +37,6 @@ function getProductDetails() {
 }
 
 getProductDetails();
-
-let cart = [];
 
 function addToCart(productId, productTitle, productImg, productPrice) {
     if (!productId || !productTitle || !productImg || !productPrice) {
@@ -75,7 +73,7 @@ function displayCart() {
                 <img src="${product.image}" alt="${product.title}">
                 <p>${product.title}</p>
                 <p>${product.price}</p>
-                <button class="remove-from-cart-btn" data-product-title="${product.title}">Remove</button>
+                <button class="remove-from-cart-btn" data-product-title="${product.title}">x</button>
             </div>
         `;
         cartContainer.appendChild(cartItem);

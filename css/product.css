@@ -86,18 +86,38 @@ body {
     flex-direction: row;
     align-items: center;
     padding-left: 40px;
+    position: fixed;
 }
 
 #render-cart-data img {
     width: 40px;
     height: 40px;
+    margin: 20px 0 0 20px;
 }
 
 #render-cart-data {
     height: 300px;
     width: 100%;
     border: 1px solid lightgrey;
-    display: flex;
     flex-direction: row;
     margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: scroll;
+}
+
+#render-cart-data button {
+    background-color: grey;
+    color: white;
+    padding: 0 8px 0 8px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#render-cart-data button:hover {
+    background-color: lightgrey;
+    color: white;
 }
