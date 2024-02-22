@@ -1,5 +1,6 @@
 let productContainer = document.getElementById("product-container");
 const buttonsFiltering = document.querySelectorAll(".filterbtn");
+let cartCounter = 0;
 
 async function getAllProducts() {
     try {
@@ -13,7 +14,6 @@ async function getAllProducts() {
                         <a href="product.html?id=${product.id}" class="prod-link">
                             <img class="prod-image" src="${product.image}" alt="${product.title}">
                             <h2 class="prod-title">${product.title}</h2>
-                            <p class="prod-description">${product.description}</p>
                             <p class="prod-price">Price: ${product.price}</p>
                             <button>View Details</button>
                         </a>    
@@ -41,7 +41,6 @@ async function filterProds(filterValue) {
                             <div class="card">
                                 <img class="prod-image" src="${product.image}" alt="${product.title}">
                                 <h2 class="prod-title">${product.title}</h2>
-                                <p class="prod-description">${product.description}</p>
                                 <p class="prod-price">Price: ${product.price}</p>
                                 <button>View Details</button>
                             </div>
