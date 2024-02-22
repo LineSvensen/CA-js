@@ -22,6 +22,7 @@ function displayCartOnConfirmationPage() {
             <div>
                 <img src="${product.image}" alt="${product.title}">
                 <p>${product.title}</p>
+                <p>Size: ${product.size}</p>
                 <p>${product.price}</p>
             </div>
         `;
@@ -37,11 +38,8 @@ window.addEventListener("load", function() {
     displayCartOnConfirmationPage();
 });
 
-document.addEventListener("DOMContentLoaded", function() {
-    const headerLinks = document.querySelectorAll(".nav-links a");
-    headerLinks.forEach(link => {
-        link.addEventListener("click", function() {
-            localStorage.removeItem("cart");
-        });
-    });
+window.addEventListener("beforeunload", function() {
+    if (window.location.pathname.includes("confirmation.html")) {
+        localStorage.removeItem("cart");
+    }
 });

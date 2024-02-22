@@ -23,7 +23,7 @@ async function getAllProducts() {
             productContainer.innerHTML += productCard;
         });
     } catch (error) {
-        console.error("Error fetching data:", error);
+        alert("Ops! We could not load the products. Please check your internet access or try again later.")
     }
 }
 
@@ -52,7 +52,7 @@ async function filterProds(filterValue) {
             }
         });
     } catch (error) {
-        console.error("Error fetching data:", error);
+        alert("Ops! Something went wrong. Please try again later.")
     }
 }
 

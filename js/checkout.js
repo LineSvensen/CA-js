@@ -22,6 +22,7 @@ function displayCartOnCheckoutPage() {
             <div>
                 <img src="${product.image}" alt="${product.title}">
                 <p>${product.title}</p>
+                <p>Size: ${product.size}</p>
                 <p>${product.price}</p>
                 <button class="remove-btn" data-product-index="${index}">Remove</button>
             </div>
