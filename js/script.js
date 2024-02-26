@@ -1,11 +1,15 @@
 let productContainer = document.getElementById("product-container");
 const buttonsFiltering = document.querySelectorAll(".filterbtn");
 let cartCounter = 0;
+const loading = document.getElementById("loading-animation");
 
 async function getAllProducts() {
     try {
+        loading.style.display = "block";
+
         const response = await fetch("https://api.noroff.dev/api/v1/rainy-days");
         const productsData = await response.json();
+
         productContainer.innerHTML = '';
         productsData.forEach(product => {
             const productCard = `
@@ -22,15 +26,20 @@ async function getAllProducts() {
             `;
             productContainer.innerHTML += productCard;
         });
+        loading.style.display = "none";
     } catch (error) {
+        loading.style.display = "none";
         alert("Ops! We could not load the products. Please check your internet access or try again later.")
     }
 }
 
 async function filterProds(filterValue) {
     try {
+        loading.style.display = "block";
+
         const response = await fetch("https://api.noroff.dev/api/v1/rainy-days");
         const productsData = await response.json();
+
         productContainer.innerHTML = '';
         productsData.forEach(product => {
             if ((product.onSale && product.gender.toLowerCase() === filterValue) ||
@@ -50,7 +59,9 @@ async function filterProds(filterValue) {
                 productContainer.innerHTML += productCard;
             }
         });
+        loading.style.display = "none";
     } catch (error) {
+        loading.style.display = "none";
         alert("Ops! Something went wrong. Please try again later.")
     }
 }

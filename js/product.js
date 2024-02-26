@@ -3,11 +3,15 @@ const cartContainer = document.getElementById("render-cart-data");
 const urlParams = new URLSearchParams(window.location.search);
 const productId = urlParams.get("id");
 let cart = [];
+const loading = document.getElementById("loading-animation");
 
 function getProductDetails() {
+    loading.style.display = "block";
+
     fetch(`https://api.noroff.dev/api/v1/rainy-days/${productId}`)
         .then(response => response.json())
         .then(productData => {
+
             productDetailsContainer.innerHTML = `
                 <div class="product-detail">
                     <img class="prod-image" src="${productData.image}" alt="${productData.title}">
@@ -40,8 +44,10 @@ function getProductDetails() {
                 const selectedSize = document.getElementById("sizes").value;
                 addToCart(productId, productTitle, productImg, productPrice, selectedSize);
             });
+            loading.style.display = "none";
         })
         .catch(error => {
+            loading.style.display = "none";
             alert("Ops! We could not load the products. Please check your internet access or try again later.");
         });
 }

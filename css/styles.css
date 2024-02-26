@@ -138,3 +138,26 @@ a {
     list-style-type: none;
     text-decoration: none;
 }
+
+
+#loading-animation {
+    display: none;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border-radius: 50%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    border: 12px solid darkorange;
+    border-top: 5px solid transparent;
+    animation: spin linear infinite;
+    animation-duration: 0.5s;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
