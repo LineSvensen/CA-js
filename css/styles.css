@@ -56,7 +56,6 @@ button:hover {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
 }
 
 .btns button {
@@ -68,11 +67,6 @@ button:hover {
     background-color: #3a3a3a;
     color: white;
 }
-
-/*titleForProduct.classList.add("prod-title");*/
-/*productDescription.classList.add("prod-description");*/
-/*productPrice.classList.add("prod-price");*/
-/*productImage.classList.add("prod-image");*/
 
 .header {
     display: flex;
@@ -124,21 +118,11 @@ body {
     padding-left: 40px;
 }
 
-/*.discount-price {*/
-/*    color: red;*/
-/*}*/
-
-/*.prod-price-before {*/
-/*    text-decoration: line-through;*/
-/*}*/
-
-
 a {
     color: black;
     list-style-type: none;
     text-decoration: none;
 }
-
 
 #loading-animation {
     display: none;
