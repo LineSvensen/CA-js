@@ -4,6 +4,10 @@
     margin: 0;
 }
 
+main {
+
+}
+
 .prod-image {
     width: 200px;
     height: 220px;
@@ -12,7 +16,6 @@
 .prod-container {
     display: flex;
     flex-direction: column;
-    /*margin-top: 40px;*/
     justify-content: center;
     justify-items: center;
     align-items: center;
@@ -56,6 +59,7 @@ button:hover {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .btns button {
@@ -83,7 +87,7 @@ button:hover {
 }
 
 .menu {
-    gap: 40px;
+    gap: 20px;
     list-style-type: none;
     margin-right: 40px;
 }
@@ -100,22 +104,32 @@ button:hover {
     margin-top: 8px;
 }
 
-body {
-    position: relative;
+html, body {
+    height: 100%;
     margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
-.footer {
+#product-container {
+    flex: 1;
+}
+
+footer {
     margin-top: auto;
     bottom: 0;
     margin-bottom: 0;
-    height: 40px;
+    height: 100%;
     width: 100%;
-    background-color: grey;
+    background-color: rgba(134, 134, 134, 0.5);
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-left: 40px;
+    padding: 0 5% 0 5%;
+    font-size: 16px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
 }
 
 a {
@@ -144,4 +158,10 @@ a {
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+
+@media (max-width: 500px) {
+    .card {
+        width: 90%;
+    }
 }
