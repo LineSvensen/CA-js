@@ -2,10 +2,13 @@
 
 ## Welcome! This repo contains the code for the "Rainy Days" online store, where i was tasked with using JavaScript and fetching API. On this website you can view all products, filter by gender, add products to cart, checkout and finally get order confirmation. This CA is a part of my Front-end development education at Noroff School of Technology and Digital Media. View the website here: https://ca-js.vercel.app/ .
 
+![gif-js-store.gif](assets%2Fgif-js-store.gif)
+
 ### Programs used 🛠️
-- Webstorm (HTML, CSS)
+- Webstorm (HTML, CSS, JS)
 - Sourcetree (push project to Github)
 - Vercel (deploy webpage)
+- Noroff API
 
 ### Project structure 📂
 - Assets folder contain logo image (and product images, just for referance).
@@ -44,7 +47,44 @@ The webpage consists of 4 pages in total; Homepage, product-page, checkout and c
 - Total value will show
 - When leaving the page, the cart will empty itself
 
-## Reflection note:
+### How to install 🔧
+
+If you want to contribute to this project or just view locally, here are the steps to get the project running on your local machine:
+
+1. You will need to have installed a program like Webstorm or VS code.
+   <br></br>
+2. You will then have to write the below in a terminal.
+   <br></br>
+3. Clone the repository:
+
+        git clone https://github.com/LineSvensen/ca-js.git
+
+4. Navigate into the project directory:
+
+       cd ca-js
+
+5. Install the dependencies:
+
+        npm install
+
+6. Start the application:
+
+        npm run start
+
+7. In your terminal at the end it should look like this:
+
+        git clone https://github.com/LineSvensen/ca-js.git
+        cd ca-js
+        npm install
+        npm run start
+
+### Contact:
+
+### [My Linkedin](https://www.linkedin.com/in/line-svensen-967131122/)
+
+### [My Github profile](https://github.com/LineSvensen)
+
+### Reflection note:
 
 Working with this CA, I have gotten much more familiar with using javascript. This is also my first project fetching API.
 
@@ -53,8 +93,6 @@ Starting out, it was a challenge deciding what way I wanted to structure my code
 Since this was my first time actually fetching API, it was tricky at first to visualize the webpage without no actual products to display from my Html – and knowing that it was crucial to make the fetch work (or else there would be no products). I wanted to make the website as simple as possible with less focus on design. It was important to make the website smooth with no hidden bugs. I used Google, W3schools and Youtube to help me along the way.
 
 After this CA, I can now manage and understand the logic behind fetching API and how to use local storage to save and display items added to cart on different pages. Tough it was a challenging process, I’m now more confident in how to filter products from the API. Additionally, I have learned that you really must be specific in your code: two jackets are not the same even though they have the same name and image (this was the reason why more products were added or removed to cart at the same time). I now understand the importance of giving functions different responsibility and separating them, in order for no overlapping and confusion.
-
-Link to vercel: https://ca-js.vercel.app/
 
 Feel free to contact me if you have questions or are interested in my work 😃
 
